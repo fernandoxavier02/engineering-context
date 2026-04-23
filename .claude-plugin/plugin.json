@@ -1,6 +1,6 @@
 {
   "name": "engineering-context",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generates mandatory engineering rules, architecture contracts, anti-pattern catalogs, and validation tests adapted to any project's stack. 6 focused skills: setup, detect-stack, map-architecture, generate-rules, mine-anti-patterns, validate-context.",
   "author": {
     "name": "FX Studio AI",

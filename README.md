@@ -6,18 +6,18 @@ Claude Code plugin that generates a **mandatory engineering context system** for
 
 Scans your repository, detects the stack, maps the architecture, mines anti-patterns from real code, and writes four always-loaded rules plus vault cards. The resulting rules are compactation-safe (load on every turn) and vault-linked (pull deeper detail on demand).
 
-## Skills (6)
+## Slash commands (6)
 
-| Skill | Trigger phrases |
-|-------|-----------------|
-| `setup` | "set up engineering context", "initialize context system" |
-| `detect-stack` | "detect project stack", "identify tech stack" |
-| `map-architecture` | "map architecture", "analyze project structure" |
-| `generate-rules` | "generate engineering rules", "create architecture contract" |
-| `mine-anti-patterns` | "mine anti-patterns", "scan for code smells" |
-| `validate-context` | "validate context", "check engineering rules" |
+| Command | What it does |
+|---------|--------------|
+| `/engineering-context:setup` | Full 5-phase pipeline |
+| `/engineering-context:detect-stack` | Auto-detect language / framework / tests |
+| `/engineering-context:map-architecture` | Map layers + dependency rules |
+| `/engineering-context:mine-anti-patterns` | Scan codebase for real anti-patterns |
+| `/engineering-context:generate-rules` | Write `.claude/rules/50–53` + vault cards |
+| `/engineering-context:validate-context` | Run validation tests + GO/NO-GO report |
 
-Each skill lists 5+ activation phrases in its `description` field so Claude Code picks it up reliably.
+Each command invokes the corresponding skill. Skills also activate via natural language (e.g. `"set up engineering context"`, `"detect project stack"`).
 
 ## Output artifacts
 
